@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Split</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="heading-container">
+        <h1 class="mainHeading">WORKOUT, THE PERSON U BECOME WILL DEPEND ON THE DECISIONS YOU TAKE DAILY</h1>
+    </div>
+    <div class="mainContainer">
+        <div class="buttonContainer">
+            <form action="/workouts" method="post" class="buttons">
+                <button class="pop-out-button" type="submit" value="chest" name="choice"><img
+                        src="chestImg.jpg"></button>
+                <button class="pop-out-button" type="submit" value="sholder" name="choice"><img src="sholderImg.png">
+                </button>
+                <button class="pop-out-button" type="submit" value="leg" name="choice"><img src="legImg.png"></button>
+                <button class="pop-out-button" type="submit" value="tricep" name="choice"><img
+                        src="tricep.jpg"></button>
+                <button class="pop-out-button" type="submit" value="back" name="choice"><img src="back.jfif"></button>
+                <button class="pop-out-button" type="submit" value="bicep" name="choice"><img src="bicep1.jpg"></button>
+
+
+
+            </form>
+        </div>
+        <div class="RoutineContainer" class="hidden">
+            <%if (urChoice=="chest" ) {%>
+                <h4> "Biginner": </h4>
+                <p> "upperChest": "For Upper Chest Declined PushUps"</p>
+                <p>"lowerChest": "For Lower Chest Inclined PushUps"</p>
+                <p> "middleChest": "For Middle Chest Dimond PushUps"</p>
+                <p>"sets": "3 Sets of 10-12"</p>
+
+                <h4>"Intermediate": </h4>
+                <p> "upperChest": "For Upper Chest Declined Dumble Rows",</p>
+                <p> "lowerChest": "For Lower Chest Inclined Dumble Rows",</p>
+                <p>"middleChest": "For Middle Closed Grip Bench Press",</p>
+                <p>"sets": "3 Sets of 20 "</p>
+
+                <h4> "Advance" :</h4>
+                <p> "upperChest": "For Upper Chest Declined Dumble Rows",</p>
+                <p> "lowerChest": "For Lower Chest Inclined Dumble Rows",</p>
+                <p>"middleChest": "For Middle Chest Dimond PushUps",</p>
+                <p>"sets": "3 Supersets of 10 "</p>
+
+                <% } else if(urChoice=="sholder" ) {%>
+                    <h4> "Biginner": </h4>
+                    <p> "frontDelts": " Pike Push-Ups",</p>
+                    <p>"middleDelts": "Plank Shoulder Taps",</p>
+                    <p>"rearDelts": "Shoulder Shrugs",</p>
+                    <p>"sets": "3 Sets of 10-12 "</p>
+
+                    <h4> "Intermediate":</h4>
+                    <p> "frontDelts": "OverHead Press",</p>
+                    <p> "middleDelts":"Dumble Lateral Raises" ,</p>
+                    <p>"rearDelts": "Bentover Dumbel Fly",</p>
+                    <p>"sets": "3 Sets of 20 "</p>
+
+                    <h4>"Advance":</h4>
+                    <p> "frontDelts": "Sholder Press",</p>
+                    <p>"middleDelts": "Dumble Lateral Raides",</p>
+                    <p>"rearDelts": "Bentover Dumbel Fly",</p>
+                    <p>"sets": "3 Supersets of 8-10 " </p>
+
+                    <% } else if(urChoice=="leg" ) {%>
+                        <h4>"Biginner": </h4>
+                        <p> "quads": "Squats (All Types)",</p>
+                        <p>"hamstrings": "Alternate Lunges",</p>
+                        <p>"calves": "Standing Calf raise",</p>
+                        <p> "sets": "Till Failure "</p>
+
+                        <h4> "Intermediate":</h4>
+                        <p> "quads": "Leg Press",</p>
+                        <p> "hamstrings": "Glute Ham Raises",</p>
+                        <p>"calves": "Seated Calf Raises",</p>
+                        <p> "sets": "Till Failure "</p>
+
+                        <h4> "Advance":</h4>
+                        <p> "quads": "Leg Extenction",</p>
+                        <p> "hamstrings": "Romainan Deadlifts,Leg Curls"</p>
+                        <p>"calves": "Seated Calf Raises, Leg Press Calf Raises",</p>
+                        <p>"sets": "Till Failure " </p>
+
+                        <% } else if(urChoice=="tricep" ) {%>
+                            <h4>"Biginner": </h4>
+                            <p> "Tricep Dips (Using a Chair or Bench)",</p>
+                            <p>"Close-Grip Push-Ups",</p>
+                            <p>"Tricep Kickbacks (Using Dumbbells)",</p>
+                            <p> "sets": "3 sets of 8-12 reps "</p>
+
+                            <h4> "Intermediate":</h4>
+                            <p> " Close-Grip Bench Press",</p>
+                            <p> "Tricep Rope Pushdown",</p>
+                            <p>"Overhead Dumbbell Tricep Extension",</p>
+                            <p> "sets": "4 sets of 8-12 reps "</p>
+
+                            <h4> "Advance":</h4>
+                            <p> " Close-Grip Bench Press",</p>
+                            <p> "Tricep Rope Pushdown",</p>
+                            <p>"Overhead Dumbbell Tricep Extension",</p>
+                            <p> "sets": "3 Supersets of 8-12 reps "</p>
+
+                            <% } else if(urChoice=="back" ) {%>
+                                <h4>Biginner:</h4>
+                                <p></p>Warm-up: 5-10 minutes of light cardio (e.g., brisk walking, jumping jacks)
+                                <p> "Push-ups "</p>
+                                <p> Dumbbell Rows (or Bent-over Rows with Resistance Band)</p>
+                                </p>
+                                <p>Pull-Ups</p>
+                                <p>Cool Down: Stretch major muscle groups for 5-10 minutes</p>
+
+                                <h4>Intermediate:</h4>
+                                <p> Warm-up: 5-10 minutes of light cardio</p>
+                                <p> Seated Rows: 3 sets of 8-10 reps</p>
+                                <p>Lat Pull-Down: 3 sets of 8-10 reps</p>
+                                <p>Cool Down: Stretch major muscle groups</p>
+
+                                <h4>"Advance":</h4>
+                                <p> "T-Bar Rows",</p>
+                                <p> "Barbell Bentarm Pullover",</p>
+                                <p>"LatPullDown",</p>
+                                <p> "sets": "3 Supersets of 8-12 reps "</p>
+
+                                <% } else if(urChoice=="bicep" ) {%>
+                                    <h4>Biginner:</h4>
+                                    <p> " Dumbbell Bicep Curl"</p>
+                                    <p>" Alternating Dumbbell Hammer Curl"</p>
+                                    <p>"Resistance Band Bicep Curl"</p>
+                                    <p>"Reps/Sets: 3 sets of 12-15 reps"</p>
+
+                                    <h4>Intermediate:</h4>
+                                    <p>"Barbell Bicep Curl"</p>
+                                    <p>"Incline Dumbbell Curl"</p>
+                                    <p>"Preacher Curl"</p>
+                                    <p>"Reps/Sets: 4 sets of 12-15 reps"</p>
+
+                                    <h4>"Advance":</h4>
+                                    <p> "Barbell Spider Curls",</p>
+                                    <p> "Cable Rope Hammer Curl (Drop Set)",</p>
+                                    <p> "Preacher Curl with Isometric Holds",</p>
+                                    <p> "Reps/Sets": "3 Supersets of 8-12 reps "</p>
+
+
+                                    <%} else {%>
+                                        <h2>Pick Your Target Muscle </h2>
+                                        <%}%>
+        </div>
+    </div>
+    <div class="giffys-container">
+        <div class="giffys">
+            <% if (urChoice=="chest" ) { %>
+                <h4>Biginner: "3 Sets of 10-12 reps"</h4>
+
+                <img class="gifs" src="declinedPushuups.gif">
+                <img class="gifs" src="inclined_pushup.gif">
+                <img class="gifs" src="dimondPushups.gif">
+
+                <h4>Intermediate: "3 Sets of 20 reps "</h4>
+                <img class="gifs" src="decline-dumble.gif">
+                <img class="gifs" src="2inclne-dumbel-press.gif">
+                <img class="gifs" src="close-grip-bench-press.gif">
+
+                <h4>Advance:"3 Supersets of 10 reps"</h4>
+                <img class="gifs" src="decline-dumble.gif">
+                <img class="gifs" src="2inclne-dumbel-press.gif">
+                <img class="gifs" src="close-grip-bench-press.gif">
+
+
+                <% } %>
+                    <% if (urChoice=="sholder" ) { %>
+                        <h4>Biginner: "3 Sets of 10-12 reps"</h4>
+                        <img class="gifs" src="pikepushups.gif">
+                        <img class="gifs" src="plank_tap.gif">
+                        <img class="gifs" src="sholdershrugs.gif">
+
+                        <h4>Intermediate: "3 Sets of 20reps "</h4>
+                        <img class="gifs" src="overheadpress.gif">
+                        <img class="gifs" src="lateralraises.gif">
+                        <img class="gifs" src="bentoverdumblefly.gif">
+
+                        <h4>Advance:"3 Supersets of 10 reps"</h4>
+                        <img class="gifs" src="overheadpress.gif">
+                        <img class="gifs" src="lateralraises.gif">
+                        <img class="gifs" src="bentoverdumblefly.gif">
+
+                        <% } %>
+                            <% if (urChoice=="leg" ) { %>
+                                <h4>Biginner: "3 Sets of 10-12 reps"</h4>
+                                <img class="gifs" src="squats.gif">
+                                <img class="gifs" src="legpress.gif">
+                                <img class="gifs" src="calf-raises-gif.gif">
+
+                                <h4>Intermediate: "3 Sets of 20reps "</h4>
+                                <img class="gifs" src="legpress.gif">
+                                <img class="gifs" src="glutehamraises.gif">
+                                <img class="gifs" src="SeatedCalfRaises.gif">
+
+                                <h4>Advance:"3 Supersets of 10 reps"</h4>
+                                <img class="gifs" src="legExt.gif">
+                                <img class="gifs" src="romanianDeadLift.gif">
+                                <img class="gifs" src="SeatedCalfRaises.gif">
+
+                                <% } %>
+                                    <% if (urChoice=="tricep" ) { %>
+                                        <h4>Biginner: "3 Sets of 10-12 reps"</h4>
+                                        <img class="gifs" src="tricepDips.gif">
+                                        <img class="gifs" src="closehandspushup.gif">
+                                        <img class="gifs" src="tricepKickback.gif">
+
+                                        <h4>Intermediate: "3 Sets of 20reps "</h4>
+                                        <img class="gifs" src="closeGrippress.gif">
+                                        <img class="gifs" src="cable-tricep-pushdown.gif">
+                                        <img class="gifs" src="dumbbell-tricep-extension.gif">
+
+                                        <h4>Advance:"3 Supersets of 10 reps"</h4>
+                                        <img class="gifs" src="closeGrippress.gif">
+                                        <img class="gifs" src="cable-tricep-pushdown.gif">
+                                        <img class="gifs" src="dumbbell-tricep-extension.gif">
+
+                                        <% } %>
+
+                                            <% if (urChoice=="back" ) { %>
+                                                <h4>Biginner: "3 Sets of 10-12 reps"</h4>
+                                                <img class="gifs" src="pushup.gif">
+                                                <img class="gifs" src="single-arm-dumbbell-row.gif">
+                                                <img class="gifs" src="pull-up.gif">
+
+                                                <h4>Intermediate: "3 Sets of 20reps "</h4>
+                                                <img class="gifs" src="seatedRows.gif">
+                                                <img class="gifs" src="LatPullDown.gif">
+                                                <img class="gifs" src="t_bar.gif">
+
+                                                <h4>Advance:"3 Supersets of 10 reps"</h4>
+                                                <img class="gifs" src="t_bar.gif">
+                                                <img class="gifs" src="barbellPullOver.gif">
+                                                <img class="gifs" src="LatPullDown.gif">
+
+                                                <% } %>
+                                                    <% if (urChoice=="bicep" ) { %>
+                                                        <h4>Biginner: "3 Sets of 10-12 reps"</h4>
+                                                        <img class="gifs" src="inner-bicep-curl.gif">
+                                                        <img class="gifs" src="altHammerCurl.gif">
+                                                        <img class="gifs" src="resistBicepCurl.gif">
+
+                                                        <h4>Intermediate: "3 Sets of 20reps "</h4>
+                                                        <img class="gifs" src="barbellBicepCurl.gif">
+                                                        <img class="gifs" src="inclinedDumbleCurl.gif">
+                                                        <img class="gifs" src="preacher-curls-img.gif">
+
+                                                        <h4>Advance:"3 Supersets of 10 reps"</h4>
+                                                        <img class="gifs" src="barbellSpiderCurl.gif">
+                                                        <img class="gifs" src="cable-curls.gif">
+                                                        <img class="gifs" src="preacherCurl.gif">
+
+                                                        <% } %>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="ftr">Build Up Buddy from RITESH RJ💪</div>
+</body>
+
+</html>

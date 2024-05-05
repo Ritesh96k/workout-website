@@ -1,0 +1,88 @@
+body{
+    text-align: center;
+    background-color: black;
+}
+.heading-container{
+    background-image: url(samurai.jfif);
+    color: white;
+    height:100px;
+    width: auto;
+}
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+button{
+    
+    border-radius: 50%;
+    box-shadow: 0 2px 48px 0 rgb(0, 0, 0, 0.10);
+    transition: all 0.3s ease;
+}
+button.pop-out-button:hover{
+    transform: scale(0.7); /* Scale the button to 110% of its original size */
+    box-shadow: 0 5px 15px 10px navy; /* Add a subtle shadow */
+}
+.mainContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+
+}
+.buttonContainer{
+    background-image: url(baki.jfif);
+}
+.RoutineContainer{
+    grid-area: 1 / 2 / 2 / 3;
+    background-size: 250% 300%;
+    color: black;
+    font-size: 15px;
+    background: linear-gradient(45deg,#dad3d3,#ecc3c3,#f0bdbd,#e4a5a5,#dad3d3,#e7ee8a);
+    animation: color ease-in-out 5s infinite;}
+    @keyframes color{
+		0%{
+		 background-position:0 50%;
+		}
+		50%{
+		background-position:50% 100% ;
+		}
+		100%{
+		background-position:100% 0%;
+		}
+	}
+
+ul{
+    list-style: none;
+}
+
+.giffys-container{
+    display: inline-flex;
+    background-color: black;
+    color: white;
+}
+
+.gifs{
+	height: 150px;
+	width: 150px;
+	border-radius: 5%;
+    border-top: 10px white;
+}
+.ftr{
+    color: black;
+    background-color: #9c9898;
+    background: linear-gradient(45%,#bdb0b0,#bdb1b1,#9c9898,#ebc4c4);
+    animation: color 10s ease-in-out infinite;}
+    
+    @keyframes color{
+		0%{
+			background-position:0 50%;
+		   }
+		   50%{
+		   background-position:50% 100% ;
+		   }
+		   100%{
+		   background-position:100% 0%;
+		   }
+	}
+

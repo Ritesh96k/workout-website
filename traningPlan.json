@@ -1,0 +1,80 @@
+[
+  {
+    "id": "0001",
+    "type": "workout",
+    "name": "Chest ",
+    "price": 2.99,
+    "Split": {
+      "bignner": {
+        "upperChest": "For Upper Chest Declined PushUps",
+        "lowerChest": "For Lower Chest Inclined PushUps",
+        "middleChest": "For Middle Chest Dimond PushUps",
+        "sets": "3 Sets of 10-12"
+      },
+      "intermediate": {
+        "upperChest": "For Upper Chest Declined Dumble Rows",
+        "lowerChest": "For Lower Chest Inclined Dumble Rows",
+        "middleChest": "For Middle ChestDimond PushUps",
+        "sets": "3 Sets of 20 "
+      },
+      "advance" :{
+        "upperChest": "For Upper Chest Declined Dumble Rows",
+        "lowerChest": "For Lower Chest Inclined Dumble Rows",
+        "middleChest": "For Middle Chest Dimond PushUps",
+        "sets": "3 Sets of 20 " 
+      }
+    }
+  },
+  {
+    "id": "0002",
+    "type": "workout",
+    "name": "Sholder ",
+    "price": 3.49,
+    "Split": {
+      "bignner": {
+      "frontDelts": "OverHead press",
+      "middleDelts": "Dumble Lateral Raides",
+      "rearDelts": "Bentover Dumbel Fly",
+      "sets": "3 Sets of 10-12 "
+    },
+    "intermediate":{
+      "frontDelts": "OverHead Press",
+      "middleDelts": "Upright Rows",
+      "rearDelts": "Bentover Dumbel Fly",
+      "sets": "3 Sets of 20 "
+    },
+    "advance":{
+      "frontDelts": "Sholder Press",
+      "middleDelts": "Dumble Lateral Raides",
+      "rearDelts": "Bentover Dumbel Fly",
+      "sets": "3 Supersets of 8-10 " 
+    }
+    }
+  },
+  {
+    "id": "0003",
+    "type": "workout",
+    "name": "legs ",
+    "price": 4.99,
+    "Split": {
+      "bignner": {
+      "quads": "Squats (All Types)",
+      "hamstrings": "Romanian Dedlifts",
+      "calves": "Standing Calf raise",
+      "sets": "Till Failure "
+    },
+    "intermediate":{
+      "quads": "Leg Press",
+      "hamstrings": "Glute Ham Raises",
+      "calves": "Seated Calf Raises",
+      "sets": "Till Failure "
+    },
+    "advance":{
+      "quads": "Lunges, Leg Press",
+      "hamstrings": "Romainan Deadlifts,Leg Curls",
+      "calves": "Seated Calf Raises, Leg Press Calf Raises",
+      "sets": "Till Failure " 
+    }
+    }
+  }
+]
